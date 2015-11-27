@@ -2,5 +2,5 @@
 # Martin Kersner, m.kersner@gmail.com
 # 2015/11/27
 
-git checkout
+git pull
 vim +PluginUpdate +PluginInstall +qall
