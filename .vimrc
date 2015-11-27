@@ -39,6 +39,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'vim-scripts/tinymode.vim'
+Plugin 'scrooloose/nerdtree'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -325,8 +326,12 @@ call tinymode#EnterMap("winsize", "<C-W>-", "-")
 call tinymode#Map("winsize", "+", "wincmd +") 
 call tinymode#Map("winsize", "-", "wincmd -") 
 
-
+" tinymode
 call tinymode#EnterMap("winsize", "<C-W><", "<") 
 call tinymode#EnterMap("winsize", "<C-W>>", ">") 
 call tinymode#Map("winsize", "<", "wincmd <") 
 call tinymode#Map("winsize", ">", "wincmd >") 
+
+" NerdTree
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
