@@ -1,0 +1,6 @@
+#!/bin/bash
+# Martin Kersner, m.kersner@gmail.com
+# 2015/11/27
+
+git checkout
+vim +PluginUpdate +PluginInstall +qall

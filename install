@@ -2,6 +2,8 @@
 # Martin Kersner, m.kersner@gmail.com
 # 2015/11/25
 
+## BACKUP
+
 # Backup of ~/.vimrc file
 VIMRC_FILE=~/.vimrc
 VIMRC_BACKUP_FILE=~/.vimrc_backup
@@ -44,7 +46,8 @@ if [ -d $VIM_DIR ]; then
     fi
 fi
 
-# Installation
+## INSTALLATION 
+
 mv ~/vimrc/ ~/.vim/
 ln -s ~/.vim/.vimrc ~/.vimrc
 
@@ -52,3 +55,6 @@ ln -s ~/.vim/.vimrc ~/.vimrc
 cd ~/.vim/
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 cd ~
+
+# Install plugins
+vim +PluginInstall +qall
