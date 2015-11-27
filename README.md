@@ -13,6 +13,7 @@ This .vimrc is inspired by [Amir Salihefendic](https://github.com/amix/vimrc).
   * `SHIFT + i` show hidden files
 * [ack.vim](https://github.com/mileszs/ack.vim)
 * [vim-airline](https://github.com/bling/vim-airline)
+* [fugitive.vim](https://github.com/tpope/vim-fugitive)
 
 ## Installation
 ```shell
@@ -21,6 +22,9 @@ git clone https://github.com/martinkersner/vimrc.git
 ~/.vimrc/install
 ```
 After VIM exits all plugins are installed and VIM is ready to use.
+
+### Installation of vim-airline fonts
+In order to isntall ailine fonts follow this [tutorial](https://powerline.readthedocs.org/en/master/installation/linux.html#fonts-installation).
 
 ## Update
 ```shell

@@ -325,6 +325,12 @@ imap <F2> <c-o><F2>
 " Press F12 to switch to UTF-8 encoding
 nnoremap <F12> :e ++enc=iso-8859-2<CR>
 
+" Use <leader>l to toggle display of whitespace
+nmap <leader>l :set list!<CR>
+
+" automatically change window's cwd to file's dir
+set autochdir
+
 " Windows resizing 
 call tinymode#EnterMap("winsize", "<C-W>+", "+") 
 call tinymode#EnterMap("winsize", "<C-W>-", "-") 
@@ -351,17 +357,3 @@ set fillchars+=stl:\ ,stlnc:\
 if !exists('g:airline_symbols')
     let g:airline_symbols = {}
 endif
-
-" unicode symbols
-let g:airline_left_sep = '»'
-let g:airline_left_sep = '▶'
-let g:airline_right_sep = '«'
-let g:airline_right_sep = '◀'
-let g:airline_symbols.linenr = '␊'
-let g:airline_symbols.linenr = '␤'
-let g:airline_symbols.linenr = '¶'
-let g:airline_symbols.branch = '⎇'
-let g:airline_symbols.paste = 'ρ'
-let g:airline_symbols.paste = 'Þ'
-let g:airline_symbols.paste = '∥'
-let g:airline_symbols.whitespace = 'Ξ'
