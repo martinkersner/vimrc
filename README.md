@@ -1,5 +1,8 @@
 # vimrc
-vimrc inspired by [Amir Salihefendic](https://github.com/amix/vimrc)
+Martin Keršner, [m.kersner@gmail.com](mailto:m.kersner@gmail.com), [blog](martinkersner.github.io)
+
+
+This vimrc is inspired by [Amir Salihefendic](https://github.com/amix/vimrc).
 
 ## Additional plugins
 * [VundleVim](https://github.com/VundleVim/Vundle.vim)
@@ -7,14 +10,9 @@ vimrc inspired by [Amir Salihefendic](https://github.com/amix/vimrc)
 * [NERD Tree](https://github.com/scrooloose/nerdtree)
   * `SHIFT + i` shows hidden files
 
-
 ## How to install
 ```shell
 cd ~
 git clone https://github.com/martinkersner/vimrc.git
-mv vimrc/ .vim/
-ln -s .vim/.vimrc .vimrc
-cd .vim/
-chmod +x run.bash
-./run.bash
+./vimrc/install
 ```

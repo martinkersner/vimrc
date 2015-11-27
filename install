@@ -1,0 +1,54 @@
+#!/bin/bash
+# Martin Kersner, m.kersner@gmail.com
+# 2015/11/25
+
+# Backup of ~/.vimrc file
+VIMRC_FILE=~/.vimrc
+VIMRC_BACKUP_FILE=~/.vimrc_backup
+if [ -f $VIMRC_FILE ]; then
+    echo "\"$VIMRC_FILE\" file already exists!"
+    echo "Do you want to create a backup \"$VIMRC_BACKUP_FILE\"? [Y/N]"
+
+    read READ_VIMRC_BACKUP
+    READ_VIMRC_BACKUP=`echo $READ_VIMRC_BACKUP | tr '[:upper:]' '[:lower:]'`
+
+    if [ "$READ_VIMRC_BACKUP" == "y" ]; then
+        mv $VIMRC_FILE $VIMRC_BACKUP_FILE
+    elif [ "$READ_VIMRC_BACKUP" == "n" ]; then
+        rm $VIMRC_FILE
+    else
+        echo "You have to specify what to do with already existing \"$VIMRC_FILE\" configuration file!"
+        echo "Installation wasn't successfull. Exiting."
+        exit 1
+    fi
+fi
+
+# Backup of ~/.vim/ directory
+VIM_DIR=~/.vim/
+VIM_BACKUP_DIR=~/.vim_backup/
+if [ -d $VIM_DIR ]; then
+    echo "\"$VIM_DIR\" directory already exists!"
+    echo "Do you want to create a backup \"$VIM_BACKUP_DIR\"? [Y/N]"
+
+    read READ_VIM_BACKUP
+    READ_VIM_BACKUP=`echo $READ_VIM_BACKUP | tr '[:upper:]' '[:lower:]'`
+
+    if [ "$READ_VIM_BACKUP" == "y" ]; then
+        mv $VIM_DIR $VIM_BACKUP_DIR
+    elif [ "$READ_VIM_BACKUP" == "n" ]; then
+        rm -rf $VIM_DIR
+    else
+        echo "You have to specify what to do with already existing \"$VIM_DIR\" directory!"
+        echo "Installation wasn't successfull. Exiting."
+        exit 1
+    fi
+fi
+
+# Installation
+mv ~/vimrc/ ~/.vim/
+ln -s ~/.vim/.vimrc ~/.vimrc
+
+# Installation of VundleVim for plugin maintanance
+cd ~/.vim/
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+cd ~
