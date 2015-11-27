@@ -1,8 +1,10 @@
 # vimrc
 vimrc inspired by [Amir Salihefendic](https://github.com/amix/vimrc)
 
-## Additional scripts
-* [tinymode.vim](http://www.vim.org/scripts/script.php?script_id=2223)
+## Additional plugins
+* [VundleVim](https://github.com/VundleVim/Vundle.vim)
+* [tinymode](https://github.com/vim-scripts/tinymode.vim)
+
 
 ## How to install
 ```
@@ -13,4 +15,3 @@ ln -s .vim/.vimrc .vimrc
 cd .vim/
 chmod +x run.bash
 ./run.bash
-```
