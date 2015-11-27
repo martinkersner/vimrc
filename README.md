@@ -14,6 +14,8 @@ This .vimrc is inspired by [Amir Salihefendic](https://github.com/amix/vimrc).
 * [ack.vim](https://github.com/mileszs/ack.vim)
 * [vim-airline](https://github.com/bling/vim-airline)
 * [fugitive.vim](https://github.com/tpope/vim-fugitive)
+  * `:Gstatus` git status
+  * `:Gwrite` git add current file
 
 ## Installation
 ```shell
