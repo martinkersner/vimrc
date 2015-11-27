@@ -12,6 +12,7 @@ This .vimrc is inspired by [Amir Salihefendic](https://github.com/amix/vimrc).
   * `:NERDTree` open directory tree
   * `SHIFT + i` show hidden files
 * [ack.vim](https://github.com/mileszs/ack.vim)
+* [vim-airline](https://github.com/bling/vim-airline)
 
 ## Installation
 ```shell
