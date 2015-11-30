@@ -26,7 +26,7 @@ git clone https://github.com/martinkersner/vimrc.git
 After VIM exits all plugins are installed and VIM is ready to use.
 
 ### Installation of vim-airline fonts
-In order to isntall ailine fonts follow this [tutorial](https://powerline.readthedocs.org/en/master/installation/linux.html#fonts-installation).
+In order to install airline fonts follow this [tutorial](https://powerline.readthedocs.org/en/master/installation/linux.html#fonts-installation).
 
 ## Update
 ```shell
