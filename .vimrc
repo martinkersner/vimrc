@@ -357,3 +357,6 @@ set fillchars+=stl:\ ,stlnc:\
 if !exists('g:airline_symbols')
     let g:airline_symbols = {}
 endif
+
+" Don't show defaultly trailing whitespaces
+let g:airline#extensions#whitespace#enabled = 0
