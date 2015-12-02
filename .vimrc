@@ -360,3 +360,7 @@ endif
 
 " Don't show defaultly trailing whitespaces
 let g:airline#extensions#whitespace#enabled = 0
+
+" Highlight colors for background and foreground
+highlight Search ctermfg=black
+highlight Search ctermbg=white
