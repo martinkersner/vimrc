@@ -364,3 +364,6 @@ let g:airline#extensions#whitespace#enabled = 0
 " Highlight colors for background and foreground
 highlight Search ctermfg=black
 highlight Search ctermbg=white
+
+" Reverse highlight with black foreground
+highlight Visual cterm=reverse, ctermbg=black
