@@ -32,3 +32,7 @@ In order to install airline fonts follow this [tutorial](https://powerline.readt
 ```shell
 ~/.vim/update
 ```
+
+## Preview
+
+<img src="http://i.imgur.com/VsqhpZ0.png?1" />
