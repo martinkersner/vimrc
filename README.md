@@ -7,7 +7,7 @@ This .vimrc is inspired by [Amir Salihefendic](https://github.com/amix/vimrc).
 ## Additional plugins
 * [Vundle.vim](https://github.com/VundleVim/Vundle.vim)
 * [tinymode.vim](https://github.com/vim-scripts/tinymode.vim)
-  * `Ctr + w` and `<` or `>` change horizontal size of window
+  * `Ctrl + w` and `<` or `>` change horizontal size of window
 * [NERD Tree](https://github.com/scrooloose/nerdtree)
   * `:NERDTree` open directory tree
   * `SHIFT + i` show hidden files
