@@ -367,3 +367,6 @@ highlight Search ctermbg=white
 
 " Reverse highlight with black foreground
 highlight Visual cterm=reverse, ctermbg=black
+
+" Convert automatically text documents as UNIX documents
+set ff=unix
