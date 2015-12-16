@@ -17,7 +17,7 @@ This .vimrc is inspired by [Amir Salihefendic](https://github.com/amix/vimrc).
   * `:Gstatus` git status
   * `:Gwrite` git add current file
 
-## Installation
+## Shortcuts
 * F2 save a file
 * F3 open NERDTree 
 * F4 toogle paste mode form different applications
