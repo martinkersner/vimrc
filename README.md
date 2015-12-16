@@ -18,6 +18,11 @@ This .vimrc is inspired by [Amir Salihefendic](https://github.com/amix/vimrc).
   * `:Gwrite` git add current file
 
 ## Installation
+* F2 save a file
+* F3 open NERDTree 
+* F4 toogle paste mode form different applications
+
+## Installation
 ```shell
 cd ~
 git clone https://github.com/martinkersner/vimrc.git

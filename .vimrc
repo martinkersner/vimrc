@@ -370,3 +370,6 @@ highlight Visual cterm=reverse, ctermbg=black
 
 " Convert automatically text documents as UNIX documents
 set ff=unix
+
+" Toogle for pasting from another application
+set pastetoggle=<F4>
