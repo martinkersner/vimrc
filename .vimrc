@@ -373,3 +373,6 @@ set ff=unix
 
 " Toogle for pasting from another application
 set pastetoggle=<F4>
+
+" Don't support vi-compatible mode
+nnoremap Q <nop>
