@@ -21,6 +21,8 @@ This .vimrc is inspired by [Amir Salihefendic](https://github.com/amix/vimrc).
 * F2 save a file
 * F3 open NERDTree 
 * F4 toogle paste mode form different applications
+* Ctrl + ←  switch to the left tab
+* Ctrl + →  switch to the right tab
 
 ## Installation
 ```shell

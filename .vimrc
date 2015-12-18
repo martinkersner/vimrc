@@ -376,3 +376,9 @@ set pastetoggle=<F4>
 
 " Don't support vi-compatible mode
 nnoremap Q <nop>
+
+" Switch between tabs
+" Ctrl + left arrow key
+" Ctrl + right arrow key
+nnoremap <C-Left> :tabprevious<CR>
+nnoremap <C-Right> :tabnext<CR>
