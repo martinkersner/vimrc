@@ -43,6 +43,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'mileszs/ack.vim'
 Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-fugitive'
+Plugin 'majutsushi/tagbar'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -323,7 +324,7 @@ vmap <F2> <Esc><F2>gv
 imap <F2> <c-o><F2>
 
 " Press F12 to switch to UTF-8 encoding
-nnoremap <F12> :e ++enc=iso-8859-2<CR>
+" nnoremap <F12> :e ++enc=iso-8859-2<CR>
 
 " Use <leader>l to toggle display of whitespace
 nmap <leader>l :set list!<CR>
@@ -382,3 +383,6 @@ nnoremap Q <nop>
 " Ctrl + right arrow key
 nnoremap <C-Left> :tabprevious<CR>
 nnoremap <C-Right> :tabnext<CR>
+
+" Toogle bar for displaying methods and classes
+nmap <F12> :TagbarToggle<CR>

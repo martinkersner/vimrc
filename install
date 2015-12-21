@@ -58,3 +58,6 @@ cd ~
 
 # Install plugins
 vim +PluginInstall +qall
+
+# Install Ctags
+sudo apt-get install ctags

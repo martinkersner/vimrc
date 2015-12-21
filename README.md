@@ -16,6 +16,7 @@ This .vimrc is inspired by [Amir Salihefendic](https://github.com/amix/vimrc).
 * [fugitive.vim](https://github.com/tpope/vim-fugitive)
   * `:Gstatus` git status
   * `:Gwrite` git add current file
+* [Tagbar](https://github.com/majutsushi/tagbar)
 
 ## Shortcuts
 * F2 save a file
@@ -23,6 +24,7 @@ This .vimrc is inspired by [Amir Salihefendic](https://github.com/amix/vimrc).
 * F4 toogle paste mode form different applications
 * Ctrl + ←  switch to the left tab
 * Ctrl + →  switch to the right tab
+* F12 toogle window with classes and methods
 
 ## Installation
 ```shell

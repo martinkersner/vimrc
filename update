@@ -4,3 +4,6 @@
 
 git pull
 vim +PluginUpdate +PluginInstall +qall
+
+# Install Ctags
+sudo apt-get install ctags
