@@ -56,8 +56,8 @@ cd ~/.vim/
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 cd ~
 
-# Install plugins
-vim +PluginInstall +qall
-
 # Install Ctags
 sudo apt-get install ctags
+
+# Install plugins
+vim +PluginInstall +qall
