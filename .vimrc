@@ -386,3 +386,6 @@ nnoremap <C-Right> :tabnext<CR>
 
 " Toogle bar for displaying methods and classes
 nmap <F12> :TagbarToggle<CR>
+
+" Add dollar sign to the end of changing string
+set cpoptions+=$
