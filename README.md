@@ -34,8 +34,8 @@ git clone https://github.com/martinkersner/vimrc.git
 ```
 After VIM exits all plugins are installed and VIM is ready to use.
 
-### Installation of vim-airline fonts
-In order to install airline fonts follow this [tutorial](https://powerline.readthedocs.org/en/master/installation/linux.html#fonts-installation).
+### Set up of vim-airline fonts
+In order to display airline fonts properly you have to select Powerline terminal fonts (those with suffix "for Powerline"). Personally, I prefer to use DejaVu Sans Mono for Powerline.
 
 ## Update
 ```shell

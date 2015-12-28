@@ -51,9 +51,15 @@ fi
 mv ~/vimrc/ ~/.vim/
 ln -s ~/.vim/.vimrc ~/.vimrc
 
-# Installation of VundleVim for plugin maintanance
 cd ~/.vim/
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+    # Installation of VundleVim for plugin maintanance
+    git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+    # Install Powerline fonts
+    git clone https://github.com/powerline/fonts.git
+    cd fonts
+    ./install.sh
+
 cd ~
 
 # Install Ctags
