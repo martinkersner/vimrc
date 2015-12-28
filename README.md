@@ -30,7 +30,7 @@ This .vimrc is inspired by [Amir Salihefendic](https://github.com/amix/vimrc).
 ```shell
 cd ~
 git clone https://github.com/martinkersner/vimrc.git
-~/.vimrc/install
+~/vimrc/install
 ```
 After VIM exits all plugins are installed and VIM is ready to use.
 
