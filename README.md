@@ -25,6 +25,7 @@ This .vimrc is inspired by [Amir Salihefendic](https://github.com/amix/vimrc).
 * Ctrl + ←  switch to the left tab
 * Ctrl + →  switch to the right tab
 * F12 toogle window with classes and methods
+* Ctrl + A works for creating increasing numbers inside selected column block
 
 ## Installation
 ```shell
