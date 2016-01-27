@@ -403,3 +403,7 @@ vnoremap <C-a> :call Incr()<CR>
 
 " Insert current date using F5 key
 inoremap <F5> <C-R>=strftime("%Y/%m/%d")<CR>
+
+" Highlight line where cursor appears
+set cursorline
+hi CursorLine cterm=NONE ctermbg=darkgrey ctermfg=white
