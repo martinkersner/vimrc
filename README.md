@@ -18,6 +18,8 @@ This .vimrc is inspired by [Amir Salihefendic](https://github.com/amix/vimrc).
   * `:Gwrite` git add current file
 * [Tagbar](https://github.com/majutsushi/tagbar)
 * [indentLine](https://github.com/Yggdroot/indentLine)
+* [NERDCommenter](https://github.com/scrooloose/nerdcommenter)
+  * `,c[space]` toggle for commenting line
 
 ## Shortcuts
 * F2 save a file
