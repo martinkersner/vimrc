@@ -17,6 +17,7 @@ This .vimrc is inspired by [Amir Salihefendic](https://github.com/amix/vimrc).
   * `:Gstatus` git status
   * `:Gwrite` git add current file
 * [Tagbar](https://github.com/majutsushi/tagbar)
+* [indentLine](https://github.com/Yggdroot/indentLine)
 
 ## Shortcuts
 * F2 save a file
@@ -26,6 +27,7 @@ This .vimrc is inspired by [Amir Salihefendic](https://github.com/amix/vimrc).
 * Ctrl + →  switch to the right tab
 * F12 toogle window with classes and methods
 * Ctrl + A works for creating increasing numbers inside selected column block
+* F5 insert current date in format YYYY/MM/DD
 
 ## Installation
 ```shell
