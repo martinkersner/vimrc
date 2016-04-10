@@ -356,6 +356,7 @@ let g:airline_powerline_fonts = 1
 set encoding=utf-8
 set t_Co=256
 set fillchars+=stl:\ ,stlnc:\
+let g:airline_section_z = '%3p%% %#__accent_bold#%{g:airline_symbols.linenr}%#__accent_bold#%4l%#__restore__#%#__restore__#:%3v [%b][0x%B]'
 
 if !exists('g:airline_symbols')
     let g:airline_symbols = {}
