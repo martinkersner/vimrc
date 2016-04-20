@@ -409,7 +409,7 @@ inoremap <F5> <C-R>=strftime("%Y/%m/%d")<CR>
 
 " Highlight line where cursor appears
 set cursorline
-hi CursorLine cterm=NONE ctermbg=235 ctermfg=reverse
+highlight CursorLine cterm=NONE ctermbg=235
 
 " Type of indent line
 " | ¦ ┆ ┊ │
