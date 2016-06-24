@@ -46,6 +46,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'majutsushi/tagbar'
 Plugin 'Yggdroot/indentLine'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'sudar/vim-arduino-syntax'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
