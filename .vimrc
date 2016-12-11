@@ -417,3 +417,5 @@ highlight CursorLine cterm=NONE ctermbg=235
 " Type of indent line
 " | ¦ ┆ ┊ │
 let g:indentLine_char="│"
+
+set path+=**
