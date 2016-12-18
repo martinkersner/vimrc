@@ -48,6 +48,7 @@ Plugin 'Yggdroot/indentLine'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'sudar/vim-arduino-syntax'
 Plugin('https://bitbucket.org/larsyencken/vim-drake-syntax.git')
+Plugin 'vim-scripts/Conque-GDB'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -184,7 +185,8 @@ set noswapfile
 " => Text, tab and indent related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Use spaces instead of tabs
-set expandtab
+"set expandtab
+set noexpandtab
 
 " Be smart when using tabs ;)
 set smarttab
@@ -192,6 +194,7 @@ set smarttab
 " 1 tab == 2 spaces
 set shiftwidth=2
 set tabstop=2
+set softtabstop=2
 
 " Linebreak on 500 characters
 set lbr
@@ -419,3 +422,10 @@ highlight CursorLine cterm=NONE ctermbg=235
 let g:indentLine_char="│"
 
 set path+=**
+
+" Highlight long lines
+set colorcolumn=110
+highlight ColorColumn ctermbg=darkgray
+
+" Make settings
+nnoremap <F6> :make!<cr>
