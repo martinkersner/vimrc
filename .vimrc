@@ -428,7 +428,9 @@ set colorcolumn=110
 highlight ColorColumn ctermbg=darkgray
 
 " Make settings
-nnoremap <F6> :make<cr>
+nnoremap <F6>  :make<CR>
+nnoremap <C-n> :lnext<CR>
+nnoremap <C-p> :lprevious<CR>
 
 " YouCompleteMe
 let g:ycm_autoclose_preview_window_after_insertion = 1
