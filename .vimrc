@@ -46,7 +46,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'majutsushi/tagbar'
 Plugin 'Yggdroot/indentLine'
 Plugin 'scrooloose/nerdcommenter'
-Plugin('https://bitbucket.org/larsyencken/vim-drake-syntax.git')
+Plugin 'https://bitbucket.org/larsyencken/vim-drake-syntax.git'
 Plugin 'vim-scripts/Conque-GDB'
 Plugin 'Valloric/YouCompleteMe'
 
