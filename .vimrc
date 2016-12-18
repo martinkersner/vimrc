@@ -49,6 +49,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'sudar/vim-arduino-syntax'
 Plugin('https://bitbucket.org/larsyencken/vim-drake-syntax.git')
 Plugin 'vim-scripts/Conque-GDB'
+Plugin 'Valloric/YouCompleteMe'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -428,4 +429,10 @@ set colorcolumn=110
 highlight ColorColumn ctermbg=darkgray
 
 " Make settings
-nnoremap <F6> :make!<cr>
+nnoremap <F6> :make<cr>
+
+" YouCompleteMe
+let g:ycm_autoclose_preview_window_after_insertion = 1
+let g:ycm_always_populate_location_list = 1
+let g:ycm_autoclose_preview_window_after_completion = 1
+let g:ycm_confirm_extra_conf = 0
