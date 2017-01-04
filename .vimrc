@@ -325,7 +325,7 @@ endfunction
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Martin's modifications
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set nu
+"set nu
 set relativenumber
 nmap <F2> :update<CR>
 vmap <F2> <Esc><F2>gv
