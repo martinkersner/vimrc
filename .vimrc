@@ -91,11 +91,7 @@ set wildmenu
 
 " Ignore compiled files
 set wildignore=*.o,*~,*.pyc
-if has("win16") || has("win32")
-    set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.DS_Store
-else
-    set wildignore+=.git\*,.hg\*,.svn\*
-endif
+set wildignore+=.git\*,.hg\*,.svn\*
 
 "Always show current position
 set ruler
@@ -143,7 +139,6 @@ set tm=500
 " Add a bit extra margin to the left
 set foldcolumn=1
 
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -157,20 +152,11 @@ endtry
 
 set background=dark
 
-" Set extra options when running in GUI mode
-if has("gui_running")
-    set guioptions-=T
-    set guioptions-=e
-    set t_Co=256
-    set guitablabel=%M\ %t
-endif
-
 " Set utf8 as standard encoding and en_US as the standard language
 set encoding=utf8
 
 " Use Unix as the standard file type
 set ffs=unix,dos,mac
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Files, backups and undo
@@ -180,13 +166,11 @@ set nobackup
 set nowb
 set noswapfile
 
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Use spaces instead of tabs
 set expandtab
-"set noexpandtab
 
 " Be smart when using tabs ;)
 set smarttab
@@ -204,7 +188,6 @@ set ai "Auto indent
 set si "Smart indent
 set wrap "Wrap lines
 
-
 """"""""""""""""""""""""""""""
 " => Visual mode related
 """"""""""""""""""""""""""""""
@@ -212,7 +195,6 @@ set wrap "Wrap lines
 " Super useful! From an idea by Michael Naumann
 vnoremap <silent> * :call VisualSelection('f', '')<CR>
 vnoremap <silent> # :call VisualSelection('b', '')<CR>
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Moving around, tabs, windows and buffers
@@ -270,7 +252,6 @@ autocmd BufReadPost *
 " Remember info about open buffers on close
 set viminfo^=%
 
-
 """"""""""""""""""""""""""""""
 " => Status line
 """"""""""""""""""""""""""""""
@@ -279,7 +260,6 @@ set laststatus=2
 
 " Format the status line
 set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l\ Col:\ %c
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Editing mappings
@@ -309,7 +289,6 @@ map <leader>ss :setlocal spell!<cr>
 " Remove the Windows ^M - when the encodings gets messed up
 noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
 
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Helper functions
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -321,11 +300,9 @@ function! HasPaste()
     return ''
 endfunction
 
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Martin's modifications
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"set nu
 set relativenumber
 nmap <F2> :update<CR>
 vmap <F2> <Esc><F2>gv
@@ -390,8 +367,8 @@ nnoremap Q <nop>
 " Switch between tabs
 " Ctrl + left arrow key
 " Ctrl + right arrow key
-nnoremap <C-Left> :tabprevious<CR>
-nnoremap <C-Right> :tabnext<CR>
+"nnoremap <C-S-h> :tabprevious<CR>
+nnoremap <C-S-l> :tabnext<CR>
 
 " Toogle bar for displaying methods and classes
 nmap <F12> :TagbarToggle<CR>
@@ -424,7 +401,7 @@ let g:indentLine_char="│"
 set path+=**
 
 " Highlight long lines
-set colorcolumn=110
+set colorcolumn=80
 highlight ColorColumn ctermbg=darkgray
 
 " Make settings
