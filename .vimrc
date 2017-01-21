@@ -368,7 +368,7 @@ nnoremap Q <nop>
 " Ctrl + left arrow key
 " Ctrl + right arrow key
 "nnoremap <C-S-h> :tabprevious<CR>
-nnoremap <C-S-l> :tabnext<CR>
+"nnoremap <C-S-l> :tabnext<CR>
 
 " Toogle bar for displaying methods and classes
 nmap <F12> :TagbarToggle<CR>
