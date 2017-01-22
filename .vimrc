@@ -49,6 +49,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'https://bitbucket.org/larsyencken/vim-drake-syntax.git'
 Plugin 'vim-scripts/Conque-GDB'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'tpope/vim-surround'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
