@@ -406,6 +406,11 @@ nnoremap <F6>  :make<CR>
 nnoremap <C-n> :lnext<CR>
 nnoremap <C-p> :lprevious<CR>
 
+" automatically fold by indent level
+set foldmethod=syntax
+" ... but have folds open by default
+set foldlevelstart=99
+
 " YouCompleteMe
 let g:ycm_autoclose_preview_window_after_insertion = 1
 let g:ycm_always_populate_location_list = 1
