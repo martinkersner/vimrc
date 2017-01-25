@@ -51,6 +51,7 @@ Plugin 'vim-scripts/Conque-GDB'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'tpope/vim-surround'
 Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'vim-scripts/ZoomWin'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
