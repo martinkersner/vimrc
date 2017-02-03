@@ -410,6 +410,7 @@ nnoremap <C-p> :lprevious<CR>
 set foldmethod=syntax
 " ... but have folds open by default
 set foldlevelstart=99
+set foldcolumn=0
 
 " YouCompleteMe
 let g:ycm_autoclose_preview_window_after_insertion = 1
