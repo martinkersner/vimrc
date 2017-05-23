@@ -52,6 +52,7 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'tpope/vim-surround'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'vim-scripts/ZoomWin'
+Plugin 'vim-scripts/matchit.zip'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
