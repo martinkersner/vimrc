@@ -40,19 +40,23 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'vim-scripts/tinymode.vim'
 Plugin 'scrooloose/nerdtree'
-Plugin 'mileszs/ack.vim'
+"Plugin 'mileszs/ack.vim'
 Plugin 'bling/vim-airline'
-Plugin 'tpope/vim-fugitive'
+"Plugin 'tpope/vim-fugitive'
 Plugin 'majutsushi/tagbar'
-Plugin 'Yggdroot/indentLine'
+"Plugin 'Yggdroot/indentLine'
 Plugin 'scrooloose/nerdcommenter'
-Plugin 'https://bitbucket.org/larsyencken/vim-drake-syntax.git'
-Plugin 'vim-scripts/Conque-GDB'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'tpope/vim-surround'
+"Plugin 'https://bitbucket.org/larsyencken/vim-drake-syntax.git'
+"Plugin 'vim-scripts/Conque-GDB'
+"Plugin 'Valloric/YouCompleteMe'
+"Plugin 'tpope/vim-surround'
 Plugin 'christoomey/vim-tmux-navigator'
-Plugin 'vim-scripts/ZoomWin'
-Plugin 'vim-scripts/matchit.zip'
+"Plugin 'vim-scripts/ZoomWin'
+"Plugin 'vim-scripts/matchit.zip'
+
+" Clang format
+Plugin 'kana/vim-operator-user'
+Plugin 'rhysd/vim-clang-format'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -421,5 +425,8 @@ let g:ycm_confirm_extra_conf = 0
 let g:ycm_show_diagnostics_ui = 0
 
 " Respecting relative numbers when jumping over wrapped lines
-noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
-noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
+"noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
+"noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
+
+" Format using clang
+nmap <F10> :ClangFormat<CR>
